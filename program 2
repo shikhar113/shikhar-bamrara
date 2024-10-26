@@ -1,0 +1,30 @@
+#include<iostream.h>
+#include<conio.h>
+int a,b;
+class swap{
+    public:
+    swap(int,int){
+        a=a+b;
+        b=a-b;
+        a=a-b;}
+        ~swap(){
+            cout<<"\n \t object destroyed";
+            
+        }
+    
+};
+int main(){
+   clrscr();
+   cout<<"enter a"<<endl;
+   cin>>a;
+   cout<<"enter b"<<endl;
+   cin>>b;
+   {
+       swap a1(a,b);
+       cout<<"a is"<<a;
+       cout<<"b is "<<b;
+       
+   }
+   getch();
+   return 0;
+}
